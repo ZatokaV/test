@@ -21,7 +21,7 @@ export default function Product() {
       </section>
 
       <section className="product__details">
-        <ul>
+        <ul className="product__details--prw-photo">
           <li className="product__preview">
             <img src="/images/product_image_1.png" alt="product image" />
           </li>
@@ -39,14 +39,14 @@ export default function Product() {
           </li>
         </ul>
 
-        <img
+        <img className="product__details--main-photo"
           src="/images/product_image_main.png"
           alt="product image"
           width={667}
           height={799}
         />
 
-        <section className="product__info">
+        <div className="product__info">
           <h2>Босоніжки жіночі із натуральної замші</h2>
           <p className="product__sale">5000 грн</p>
           <p className="product__price">5000 грн</p>
@@ -128,79 +128,94 @@ export default function Product() {
               <button>more</button>
             </li>
           </ul>
-        </section>
+        </div>
+      </section>
 
-        <section className="product__infavorite">
+      <section>
+        <div className="product__infavorite--top">
           <h2>ВИ ТАКОЖ ЗБЕРЕГЛИ</h2>
-          <label class="switch">
+          <label className="switch">
             <input type="checkbox" />
             <span class="slider"></span>
           </label>
-          <ul>
-            <li className="product__card">
-              <img src="images/main_new_1.png" alt="product image" />
-              <h3>Босоніжки жіночі із натуральної замші</h3>
-              <p>5000 грн</p>
-              <label class="switch">
-                <input type="checkbox" />
-                <span class="slider"></span>
-              </label>
-              <ul>
-                <li>
-                  <button>colour</button>
-                </li>
-                <li>
-                  <button>colour</button>
-                </li>
-                <li>
-                  <button>colour</button>
-                </li>
-              </ul>
-            </li>
+        </div>
+        <ul className="product__infavorite">
+          <li className="product__card">
+            <img src="images/main_new_1.png" alt="product image" />
 
-            <li className="product__card">
-              <img src="images/main_new_2.png" alt="product image" />
-              <h3>Босоніжки жіночі із натуральної замші</h3>
-              <p>5000 грн</p>
+            <div className="product__card--info-favorite">
+              <div className="product__card--info">
+                <h3>Босоніжки жіночі із натуральної замші</h3>
+                <p>5000 грн</p>
+              </div>
               <label class="switch">
                 <input type="checkbox" />
                 <span class="slider"></span>
               </label>
-              <ul>
-                <li>
-                  <button>colour</button>
-                </li>
-                <li>
-                  <button>colour</button>
-                </li>
-                <li>
-                  <button>colour</button>
-                </li>
-              </ul>
-            </li>
+            </div>
+            <ul className="product__card--color">
+              <li>
+                <button>colour</button>
+              </li>
+              <li>
+                <button>colour</button>
+              </li>
+              <li>
+                <button>colour</button>
+              </li>
+            </ul>
+          </li>
 
-            <li className="product__card">
-              <img src="images/main_new_3.png" alt="product image" />
-              <h3>Босоніжки жіночі із натуральної замші</h3>
-              <p>5000 грн</p>
+          <li className="product__card">
+            <img src="images/main_new_2.png" alt="product image" />
+            <div className="product__card--info-favorite">
+              <div className="product__card--info">
+                <h3>Босоніжки жіночі із натуральної замші</h3>
+                <p>5000 грн</p>
+              </div>
               <label class="switch">
                 <input type="checkbox" />
                 <span class="slider"></span>
               </label>
-              <ul>
-                <li>
-                  <button>colour</button>
-                </li>
-                <li>
-                  <button>colour</button>
-                </li>
-                <li>
-                  <button>colour</button>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </section>
+            </div>
+            <ul className="product__card--color">
+              <li>
+                <button>colour</button>
+              </li>
+              <li>
+                <button>colour</button>
+              </li>
+              <li>
+                <button>colour</button>
+              </li>
+            </ul>
+          </li>
+
+          <li className="product__card">
+            <img src="images/main_new_3.png" alt="product image" />
+            <div className="product__card--info-favorite">
+              <div className="product__card--info">
+                <h3>Босоніжки жіночі із натуральної замші</h3>
+                <p>5000 грн</p>
+              </div>
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider"></span>
+              </label>
+            </div>
+            <ul className="product__card--color">
+              <li>
+                <button>colour</button>
+              </li>
+              <li>
+                <button>colour</button>
+              </li>
+              <li>
+                <button>colour</button>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </section>
     </main>
   );
