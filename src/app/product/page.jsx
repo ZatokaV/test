@@ -39,7 +39,8 @@ export default function Product() {
           </li>
         </ul>
 
-        <img className="product__details--main-photo"
+        <img
+          className="product__details--main-photo"
           src="/images/product_image_main.png"
           alt="product image"
           width={667}
@@ -47,15 +48,22 @@ export default function Product() {
         />
 
         <div className="product__info">
-          <h2>Босоніжки жіночі із натуральної замші</h2>
-          <p className="product__sale">5000 грн</p>
-          <p className="product__price">5000 грн</p>
-          <p className="product__article">Art. 123456</p>
-
+          <div className="product__info--textinfo">
+            <h2 className="product__info--name">Босоніжки жіночі із натуральної замші</h2>
+            <div className="product__info--price-art">
+              <div className="product__info--price">
+                <p className="product__sale">5000 грн</p>
+                <p className="product__price">5000 грн</p>
+              </div>
+              <p className="product__article">Art. 123456</p>
+            </div>
+          </div>
           <div className="product__size">
-            <h3>Розмір</h3>
+            <div className="product__size--title">
+            <h3 className="product__info--subtitle">Розмір</h3>
             <p>Розмірна сітка</p>
-            <ul>
+            </div>
+            <ul className="product__size--buttons">
               <li>
                 <button>36</button>
               </li>
@@ -72,12 +80,12 @@ export default function Product() {
                 <button>40</button>
               </li>
             </ul>
-            <p>В наявності</p>
+            <p className="product__info--availability">В наявності</p>
           </div>
 
           <div className="product__colour">
-            <h3>Колір</h3>
-            <ul>
+            <h3 className="product__info--subtitle">Колір</h3>
+            <ul className="product__card--color">
               <li>
                 <button>colour</button>
               </li>

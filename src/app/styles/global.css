@@ -1,6 +1,4 @@
-/* ===== CSS RESET by Krivbas edition ===== */
 
-/* Скидання відступів, бордерів, шрифтів */
 *,
 *::before,
 *::after {
@@ -9,41 +7,51 @@
   box-sizing: border-box;
 }
 
-/* Вирівнювання шрифтів та кольорів */
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, sans-serif;
   line-height: 1.5;
   background-color: #fff;
   color: #111;
   -webkit-font-smoothing: antialiased;
+  margin: 0;
 }
 
-/* Зображення та відео */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* Текстові елементи */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
-/* Посилання */
 a {
   color: inherit;
   text-decoration: none;
 }
 
-/* Списки */
-ul, ol {
+ul,
+ol {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-/* Кнопки */
 button {
   font: inherit;
   border: none;
@@ -51,21 +59,21 @@ button {
   cursor: pointer;
 }
 
-/* Форми */
-input, textarea, select {
+input,
+textarea,
+select {
   font: inherit;
   border: none;
   background: none;
   outline: none;
 }
 
-/* Таблиці */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* Корінь для модалок/порталів */
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }

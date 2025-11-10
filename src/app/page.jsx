@@ -2,7 +2,7 @@ import "./styles/main.css";
 
 export default function Home() {
   return (
-    <main>
+    <main className="container">
       <section className="hero">
         <div className="hero__content">
           <div className="hero__text--main">
