@@ -1,0 +1,67 @@
+.container {
+  max-width: 1512px;
+  margin: 0 80px;
+  padding-bottom: 120px;
+}
+
+.order__breadcrumbs {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.order__breadcrumbs ul {
+  display: flex;
+  gap: 2px;
+}
+
+.order__breadcrumbs li {
+  display: flex;
+  align-items: center;
+  color: #1e1e1e80;
+  font-size: 13px;
+}
+
+.order__breadcrumbs li:not(:last-child)::after {
+  content: "/";
+  font-size: 13px;
+  color: #1e1e1e80;
+  margin: 0 6px;
+}
+
+.order__inputs-name-surname {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.form__row {
+  display: flex;
+  gap: 24px; /* відстань між інпутами */
+  margin-bottom: 24px;
+}
+
+.order__inputs--form-group {
+  flex: 1; /* щоб обидва інпути були однакової ширини */
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #1E1E1E;
+  font-size: 14px;
+}
+
+.form__checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form__checkboxes label {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 16px;
+}

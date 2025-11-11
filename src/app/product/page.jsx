@@ -1,13 +1,23 @@
 import "./product.css";
 import ProductCard from "../items/card";
 
-
 const infavoriteProducts = [
-  { image: "images/main_new_1.png", title: "Босоніжки жіночі із натуральної замші", price: 5000 },
-  { image: "images/main_new_2.png", title: "Босоніжки жіночі із натуральної замші", price: 5000 },
-  { image: "images/main_new_3.png", title: "Босоніжки жіночі із натуральної замші", price: 5000 },
+  {
+    image: "images/main_new_1.png",
+    title: "Босоніжки жіночі із натуральної замші",
+    price: 5000,
+  },
+  {
+    image: "images/main_new_2.png",
+    title: "Босоніжки жіночі із натуральної замші",
+    price: 5000,
+  },
+  {
+    image: "images/main_new_3.png",
+    title: "Босоніжки жіночі із натуральної замші",
+    price: 5000,
+  },
 ];
-
 
 export default function Product() {
   return (
@@ -58,7 +68,9 @@ export default function Product() {
 
         <div className="product__info">
           <div className="product__info--textinfo">
-            <h2 className="product__info--name">Босоніжки жіночі із натуральної замші</h2>
+            <h2 className="product__info--name">
+              Босоніжки жіночі із натуральної замші
+            </h2>
             <div className="product__info--price-art">
               <div className="product__info--price">
                 <p className="product__sale">5000 грн</p>
@@ -69,8 +81,8 @@ export default function Product() {
           </div>
           <div className="product__size">
             <div className="product__size--title">
-            <h3 className="product__info--subtitle">Розмір</h3>
-            <p>Розмірна сітка</p>
+              <h3 className="product__info--subtitle">Розмір</h3>
+              <p>Розмірна сітка</p>
             </div>
             <ul className="product__size--buttons">
               <li>
@@ -109,10 +121,16 @@ export default function Product() {
 
           <ul className="product__order--btns">
             <li>
-              <button className="product__order--btn-black">Додати до кошику</button>
+              <button className="product__order--btn-black">
+                Додати до кошику
+              </button>
             </li>
             <li>
-              <button className="product__order--btn-white">Купити в 1 клік</button>
+              <a href="/order">
+                <button className="product__order--btn-white">
+                  Купити в 1 клік
+                </button>
+              </a>
             </li>
           </ul>
 
