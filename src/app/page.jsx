@@ -1,4 +1,13 @@
 import "./styles/main.css";
+import ProductCard from "./items/card";
+
+
+const products = [
+  { image: "images/main_new_1.png", title: "Босоніжки жіночі із натуральної замші", price: 5000 },
+  { image: "images/main_new_2.png", title: "Босоніжки жіночі із натуральної замші", price: 5000 },
+  { image: "images/main_new_3.png", title: "Босоніжки жіночі із натуральної замші", price: 5000 },
+];
+
 
 export default function Home() {
   return (
@@ -36,87 +45,11 @@ export default function Home() {
             <span className="slider"></span>
           </label>
         </div>
+
         <ul className="main__new--products">
-          <li className="product__card">
-            <img src="images/main_new_1.png" alt="product image" />
-
-            <div className="product__card--info-favorite">
-              <div className="product__card--info">
-                <h3>Босоніжки жіночі із натуральної замші</h3>
-                <p>5000 грн</p>
-              </div>
-              <label class="switch">
-                <input type="checkbox" />
-                <span class="slider"></span>
-              </label>
-            </div>
-            <ul className="product__card--color">
-              <li>
-                <button>colour</button>
-              </li>
-              <li>
-                <button>colour</button>
-              </li>
-              <li>
-                <button>colour</button>
-              </li>
-            </ul>
-          </li>
-
-          <li className="product__card">
-            <img src="images/main_new_2.png" alt="product image" />
-
-            <div className="product__card--info-favorite">
-              <div className="product__card--info">
-                <h3>Босоніжки жіночі із натуральної замші</h3>
-                <p>5000 грн</p>
-              </div>
-
-              <label class="switch">
-                <input type="checkbox" />
-                <span class="slider"></span>
-              </label>
-            </div>
-            <ul className="product__card--color">
-              <li>
-                <button>colour</button>
-              </li>
-              <li>
-                <button>colour</button>
-              </li>
-              <li>
-                <button>colour</button>
-              </li>
-            </ul>
-          </li>
-
-          <li className="product__card">
-            <img src="images/main_new_3.png" alt="product image" />
-
-            <div className="product__card--info-favorite">
-              <div className="product__card--info">
-                <h3>Босоніжки жіночі із натуральної замші</h3>
-                <p>5000 грн</p>
-              </div>
-
-              <label class="switch">
-                <input type="checkbox" />
-                <span class="slider"></span>
-              </label>
-            </div>
-
-            <ul className="product__card--color">
-              <li>
-                <button>colour</button>
-              </li>
-              <li>
-                <button>colour</button>
-              </li>
-              <li>
-                <button>colour</button>
-              </li>
-            </ul>
-          </li>
+          {products.map((item, index) => (
+            <ProductCard key={index} {...item} />
+          ))}
         </ul>
       </section>
 
@@ -136,85 +69,14 @@ export default function Home() {
           <h2>БЕСТСЕЛЕРИ</h2>
           <label className="switch">
             <input type="checkbox" />
-            <span class="slider"></span>
+            <span className="slider"></span>
           </label>
         </div>
+
         <ul className="main__bestsellers--products">
-          <li className="product__card">
-            <img src="images/main_new_1.png" alt="product image" />
-            <div className="product__card--info-favorite">
-              <div className="product__card--info">
-                <h3>Босоніжки жіночі із натуральної замші</h3>
-                <p>5000 грн</p>
-              </div>
-              <label className="switch">
-                <input type="checkbox" />
-                <span class="slider"></span>
-              </label>
-            </div>
-            <ul className="product__card--color">
-              <li>
-                <button>colour</button>
-              </li>
-              <li>
-                <button>colour</button>
-              </li>
-              <li>
-                <button>colour</button>
-              </li>
-            </ul>
-          </li>
-
-          <li className="product__card">
-            <img src="images/main_new_2.png" alt="product image" />
-            <div className="product__card--info-favorite">
-              <div className="product__card--info">
-                <h3>Босоніжки жіночі із натуральної замші</h3>
-                <p>5000 грн</p>
-              </div>
-              <label class="switch">
-                <input type="checkbox" />
-                <span class="slider"></span>
-              </label>
-            </div>
-            <ul className="product__card--color">
-              <li>
-                <button>colour</button>
-              </li>
-              <li>
-                <button>colour</button>
-              </li>
-              <li>
-                <button>colour</button>
-              </li>
-            </ul>
-          </li>
-
-          <li className="product__card">
-            <img src="images/main_new_3.png" alt="product image" />
-
-            <div className="product__card--info-favorite">
-              <div className="product__card--info">
-                <h3>Босоніжки жіночі із натуральної замші</h3>
-                <p>5000 грн</p>
-              </div>
-              <label class="switch">
-                <input type="checkbox" />
-                <span class="slider"></span>
-              </label>
-            </div>
-            <ul className="product__card--color">
-              <li>
-                <button>colour</button>
-              </li>
-              <li>
-                <button>colour</button>
-              </li>
-              <li>
-                <button>colour</button>
-              </li>
-            </ul>
-          </li>
+          {products.map((item, index) => (
+            <ProductCard key={index} {...item} />
+          ))}
         </ul>
       </section>
     </main>
