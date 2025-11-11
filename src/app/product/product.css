@@ -1,5 +1,7 @@
-.product {
-  border-top: 1px solid #e0e0e0;
+
+.container {
+  max-width: 1512px;
+  margin: 0 auto; 
 }
 
 .product__breadcrumbs {
@@ -30,26 +32,22 @@
 .product__details {
   display: flex;
   flex-direction: row;
+  margin: 20px 146.5px 8px 146.5px;
 }
 
 
-.product__details{
-    margin: 20px 146.5px 8px 146.5px;
+.product__details--prw-photo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-right: 24px;
 }
 
-.product__details--prw-photo{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding-right: 24px;
+.product__details--prw-photo img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
 }
-
-.product__details--prw-photo img{
-    width: 100%;
-    height: auto;   
-    cursor: pointer;
-}
-
 
 .product__infavorite--top {
   display: flex;
@@ -58,7 +56,6 @@
   align-items: center;
   margin: 0 80px;
   padding: 40px 0;
-  
 }
 
 .product__infavorite {
@@ -70,27 +67,26 @@
   justify-content: center;
 }
 
-
-.product__info{
+.product__info {
   display: flex;
   flex-direction: column;
   margin-left: 44px;
 }
 
-.product__info--name{
+.product__info--name {
   font-size: 18px;
   font-weight: 500;
-  color: #1E1E1E;
+  color: #1e1e1e;
 }
 
-.product__info--textinfo{
+.product__info--textinfo {
   display: flex;
   flex-direction: column;
   gap: 24px;
   border-bottom: solid 1px #e0e0e0;
 }
 
-.product__info--price-art{
+.product__info--price-art {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -98,20 +94,20 @@
   padding-bottom: 20px;
 }
 
-.product__info--price{
+.product__info--price {
   display: flex;
   flex-direction: row;
   gap: 12px;
 }
 
-.product__size--title{
+.product__size--title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.product__size--buttons{
+.product__size--buttons {
   display: flex;
   flex-direction: row;
   gap: 32px;
@@ -119,32 +115,36 @@
   margin-bottom: 24px;
 }
 
-.product__info--availability{
+.product__info--availability {
   margin-bottom: 32px;
-  color: #1E1E1EB2;
-
+  color: #1e1e1eb2;
 }
 
-.product__info--subtitle{
+.product__info--subtitle {
   size: 14px;
-  color: #1E1E1EB2;
+  color: #1e1e1eb2;
   font-weight: 400;
 }
 
-.product__card--color{
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-    margin-top: 24px;
-    margin-left: 20px;
+.product__order--btns {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-.product__card--info-favorite {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 20px;
-  margin-top: 24px;
-  margin-right: 20px;
+.product__order--btns button {
+  width: 100%;
+  height: 45px;
+  cursor: pointer;
+  border: 1px solid #1e1e1e;
+  font-size: 16px;
+  font-weight: 400;
 }
+
+.product__order--btn-black {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+

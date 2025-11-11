@@ -1,6 +1,5 @@
 import "./card.css";
 
-
 export default function ProductCard({ image, title, price }) {
   return (
     <li className="product__card">
@@ -8,7 +7,9 @@ export default function ProductCard({ image, title, price }) {
 
       <div className="product__card--info-favorite">
         <div className="product__card--info">
-          <h3>{title}</h3>
+          <h3>
+            <a href="/product">{title}</a>
+          </h3>
           <p>{price} грн</p>
         </div>
         <label className="switch">
@@ -18,9 +19,15 @@ export default function ProductCard({ image, title, price }) {
       </div>
 
       <ul className="product__card--color">
-        <li><button>colour</button></li>
-        <li><button>colour</button></li>
-        <li><button>colour</button></li>
+        <li>
+          <button>colour</button>
+        </li>
+        <li>
+          <button>colour</button>
+        </li>
+        <li>
+          <button>colour</button>
+        </li>
       </ul>
     </li>
   );

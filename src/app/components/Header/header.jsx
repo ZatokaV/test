@@ -3,13 +3,13 @@ import "./header.css";
 export default function Header() {
   return (
     <header className="header">
-      <a className="header__logo" href="#" >
+      <a className="header__logo" href="/" >
         <img src="/icons/enemy_logo.svg" alt="enemy logo" />
       </a>
       <div className="header__menu">
         <ul className="header__navbar">
           <li>
-            <a href="#">НОВА КОЛЕЦІЯ</a>
+            <a href="/new">НОВА КОЛЕЦІЯ</a>
           </li>
           <li className="header__navbar--btn">
             <a href="#">ВЗУТТЯ</a>

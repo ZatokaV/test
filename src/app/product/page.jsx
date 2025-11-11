@@ -11,7 +11,7 @@ const infavoriteProducts = [
 
 export default function Product() {
   return (
-    <main className="product">
+    <main className="product container">
       <section className="product__breadcrumbs">
         <ul>
           <li>
@@ -109,10 +109,10 @@ export default function Product() {
 
           <ul className="product__order--btns">
             <li>
-              <button className="btn--white">Додати до кошику</button>
+              <button className="product__order--btn-black">Додати до кошику</button>
             </li>
             <li>
-              <button className="btn--black">Купити в 1 клік</button>
+              <button className="product__order--btn-white">Купити в 1 клік</button>
             </li>
           </ul>
 
