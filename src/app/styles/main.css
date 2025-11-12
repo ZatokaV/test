@@ -15,6 +15,9 @@
   align-items: center;
   text-align: center;
   padding-bottom: 8px;
+  background-image: url("/images/hero_bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .hero__content {

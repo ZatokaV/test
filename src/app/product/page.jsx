@@ -42,29 +42,46 @@ export default function Product() {
       <section className="product__details">
         <ul className="product__details--prw-photo">
           <li className="product__preview">
-            <img src="/images/product_image_1.png" alt="product image" />
+            <img
+              src="/images/product_image_1.png"
+              alt="product image preview"
+            />
+          </li>
+          <li className="product__preview active">
+            <img
+              src="/images/product_image_2.png"
+              alt="product image preview"
+            />
           </li>
           <li className="product__preview">
-            <img src="/images/product_image_2.png" alt="product image" />
+            <img
+              src="/images/product_image_3.png"
+              alt="product image preview"
+            />
           </li>
           <li className="product__preview">
-            <img src="/images/product_image_3.png" alt="product image" />
+            <img
+              src="/images/product_image_4.png"
+              alt="product image preview"
+            />
           </li>
           <li className="product__preview">
-            <img src="/images/product_image_4.png" alt="product image" />
-          </li>
-          <li className="product__preview">
-            <img src="/images/product_image_5.png" alt="product image" />
+            <img
+              src="/images/product_image_5.png"
+              alt="product image preview"
+            />
           </li>
         </ul>
 
-        <img
-          className="product__details--main-photo"
-          src="/images/product_image_main.png"
-          alt="product image"
-          width={667}
-          height={799}
-        />
+        <div className="product__details--main-photo-wrapper">
+          <img
+            className="product__details--main-photo"
+            src="/images/product_image_main.png"
+            alt="product image"
+            width={667}
+            height={799}
+          />
+        </div>
 
         <div className="product__info">
           <div className="product__info--textinfo">

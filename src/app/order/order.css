@@ -1,13 +1,14 @@
-
 .container {
   max-width: var(--container);
   margin-inline: auto;
   width: 100%;
 }
 
-.order__info{
+.order__info {
   display: flex;
   flex-direction: row;
+  gap: 100px;
+  padding-bottom: 80px;
 }
 
 .order__breadcrumbs {
@@ -34,7 +35,7 @@
   margin: 0 6px;
 }
 
-.order__info--leftside{
+.order__info--leftside {
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -46,19 +47,123 @@
   gap: 24px;
 }
 
-.order__contact--double-row{
+.order__contact--double-row {
   display: flex;
   flex-direction: row;
   gap: 24px;
 }
 
-.input{
-  width: 100%;
-  border: solid 1px #1E1E1E;
+.order__contact--double-row > div{
+  flex: 1;
 }
 
-.order__contact--chekboxes{
+.input {
+  width: 100%;
+  border: solid 1px #1e1e1e;
+}
+
+.order__contact--chekboxes {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+.order__cart--item {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.order__cart--item img {
+  width: 100%;
+}
+
+.order__cart--item-info{
+  padding-top: 10px;
+}
+
+.order__cart--item-size {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.order__cart--item-color {
+  display: flex;
+  align-items: center;
+  padding-bottom: 37px;
+}
+
+.order__cart--colour-text {
+  margin-right: 16px;
+}
+
+.color-swatch {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  vertical-align: middle;
+  margin-right: 12px;
+}
+
+.order__cart--item-price {
+  display: flex;
+}
+
+.final-price {
+  margin-left: auto;
+}
+
+.order__cart--item-number {
+  display: flex;
+  gap: 16px;
+}
+
+.order__cart--summary{
+  margin-bottom: 24px;
+}
+
+.order__info--rightside input{
+  margin-top: 8px;
+}
+
+.summary__line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.order__cart--final-total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  margin-top: 20px;
+}
+
+.order__cart--checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.order__cart--btn {
+  height: 45px;
+  display: block;
+  width: 100%;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: none;
+
+  text-align: center;
+  font-size: 16;
+  font-weight: 400;
 }

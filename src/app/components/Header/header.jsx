@@ -13,13 +13,13 @@ export default function Header() {
           </li>
           <li className="header__navbar--btn">
             <a href="#">ВЗУТТЯ</a>
-            <button class="icon-btn">
+            <button className="icon-btn">
               <img src="/icons/btn_down.svg" alt="down"></img>
             </button>
           </li>
           <li className="header__navbar--btn">
             <a href="#">CУМКИ</a>
-            <button class="icon-btn">
+            <button className="icon-btn">
               <img src="/icons/btn_down.svg" alt="down"></img>
             </button>
           </li>

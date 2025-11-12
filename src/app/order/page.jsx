@@ -97,7 +97,7 @@ export default function Order() {
             <div className="order__contact--select">
               <label htmlFor="city">Оберіть ваше місто/смт/село</label>
               <select id="city" name="city" className="input">
-                <option value="" disabled selected>
+                <option value="" disabled>
                   Оберіть
                 </option>
                 <option value="kyiv">Київ</option>
@@ -138,20 +138,93 @@ export default function Order() {
             <h3>Ваш коментар</h3>
             <div className="order__contact--row">
               <label htmlFor="comment">Додати коментар до замовлення</label>
-              <textarea className="input" name="comment" id="comment">
-                Ваше повідомлення...
-              </textarea>
+              <textarea
+                className="input"
+                name="comment"
+                id="comment"
+                defaultValue="Ваше повідомлення..."
+              ></textarea>
               <p>263 знаків залишилось</p>
             </div>
           </div>
         </div>
 
         <div className="order__info--rightside">
-          карточка
+          <h2>Ваша корзина</h2>
+          <div className="order__cart--item">
+            <img
+              src="images/in_bascket.png"
+              alt="shoes"
+ 
+            />
+            <div className="order__cart--item-info">
+              <h3>Босоніжки жіночі із натуральної замші</h3>
+              <div className="order__cart--item-size">
+                <span>Розмір: </span>
+                <span>37</span>
+              </div>
+              <div className="order__cart--item-color">
+                <span className="order__cart--colour-text">Колір:</span>
+                <span
+                  className="color-swatch"
+                  style={{ backgroundColor: "#E7E4D1" }}
+                  aria-hidden="true"
+                ></span>
+                <span>Бежевий</span>
+              </div>
+              <div className="order__cart--item-price">
+                <div className="order__cart--item-number">
+                  <button className="quantity-btn">-</button>
+                  <span>1</span>
+                  <button className="quantity-btn">+</button>
+                </div>
+                <span className="final-price">5000 грн</span>
+              </div>
+            </div>
           </div>
 
+          <div className="order__cart--summary">
+            <div className="summary__line">
+              <span>Разом</span>
+              <span>10000 грн</span>
+            </div>
+            <div className="summary__line">
+              <span>Доставка</span>
+              <span>за тарифами Нової пошти</span>
+            </div>
+          </div>
 
+          <label htmlFor="promoCode">У мне є промокод на знижку</label>
+          <input
+            className="input"
+            type="promoCode"
+            id="promoCode"
+            name="promoCode"
+            required
+          />
 
+          <div className="order__cart--final-total">
+            <span>Всього до оплати:</span>
+            <span>10000 грн</span>
+          </div>
+          <div className="order__cart--checkboxes">
+            <label>
+              <input type="checkbox" name="oferta" required />Я погоджуюся з
+              договором <a href="#">оферти і політикою конфіденційності</a>
+            </label>
+
+            <label>
+              <input type="checkbox" name="back" required />Я ознайомлений з
+              умовами обміну та поверення
+            </label>
+
+            <label>
+              <input type="checkbox" name="back" />
+              Передзвоніть мені для уточнення замовлення
+            </label>
+          </div>
+          <button className="order__cart--btn">Підтвердити замовлення</button>
+        </div>
       </section>
     </main>
   );
