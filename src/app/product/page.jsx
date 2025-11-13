@@ -123,15 +123,33 @@ export default function Product() {
 
           <div className="product__colour">
             <h3 className="product__info--subtitle">Колір</h3>
-            <ul className="product__card--color">
+            <ul className="product__card--color-inbuscet">
               <li>
-                <button>colour</button>
+                <button>
+                  <span
+                    className="color-swatch"
+                    style={{ backgroundColor: "#5C5A5D" }}
+                    aria-hidden="true"
+                  ></span>
+                </button>
               </li>
               <li>
-                <button>colour</button>
+                <button>
+                  <span
+                    className="color-swatch"
+                    style={{ backgroundColor: "#E7E4D1" }}
+                    aria-hidden="true"
+                  ></span>
+                </button>
               </li>
               <li>
-                <button>colour</button>
+                <button>
+                  <span
+                    className="color-swatch"
+                    style={{ backgroundColor: "#281513" }}
+                    aria-hidden="true"
+                  ></span>
+                </button>
               </li>
             </ul>
           </div>

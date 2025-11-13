@@ -11,17 +11,19 @@ const products = [
 
 export default function Home() {
   return (
-    <main className="container">
+    <main>
       <section className="hero">
         <div className="hero__content">
           <div className="hero__text--main">
             <h1>НАЗВА КОЛЕКЦІЇ</h1>
             <p>LOREM IPSUM DOLORES</p>
           </div>
+          
           <p>ТРАВЕНЬ 2025</p>
-          <label class="switch">
+          
+          <label className="switch">
             <input type="checkbox" />
-            <span class="slider"></span>
+            <span className="slider"></span>
           </label>
         </div>
       </section>
@@ -39,7 +41,7 @@ export default function Home() {
 
       <section className="main__new">
         <div className="main__new--top">
-          <h2>НОВІ НАДХОДЖЕННЯ</h2>
+          <h2 className="sub_title">НОВІ НАДХОДЖЕННЯ</h2>
           <label className="switch">
             <input type="checkbox" />
             <span className="slider"></span>
@@ -66,7 +68,7 @@ export default function Home() {
 
       <section className="main__bestsellers">
         <div className="main__bestsellers--top">
-          <h2>БЕСТСЕЛЕРИ</h2>
+          <h2 className="sub_title">БЕСТСЕЛЕРИ</h2>
           <label className="switch">
             <input type="checkbox" />
             <span className="slider"></span>

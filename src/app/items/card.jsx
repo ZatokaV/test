@@ -7,10 +7,10 @@ export default function ProductCard({ image, title, price }) {
 
       <div className="product__card--info-favorite">
         <div className="product__card--info">
-          <h3>
+          <h3 className="product__name">
             <a href="/product">{title}</a>
           </h3>
-          <p>{price} грн</p>
+          <p className="product__price">{price} грн</p>
         </div>
         <label className="switch">
           <input type="checkbox" />
@@ -20,13 +20,31 @@ export default function ProductCard({ image, title, price }) {
 
       <ul className="product__card--color">
         <li>
-          <button>colour</button>
+          <button>
+            <span
+              className="color-swatch"
+              style={{ backgroundColor: "#5C5A5D" }}
+              aria-hidden="true"
+            ></span>
+          </button>
         </li>
         <li>
-          <button>colour</button>
+          <button>
+            <span
+              className="color-swatch"
+              style={{ backgroundColor: "#E7E4D1" }}
+              aria-hidden="true"
+            ></span>
+          </button>
         </li>
         <li>
-          <button>colour</button>
+          <button>
+            <span
+              className="color-swatch"
+              style={{ backgroundColor: "#281513" }}
+              aria-hidden="true"
+            ></span>
+          </button>
         </li>
       </ul>
     </li>

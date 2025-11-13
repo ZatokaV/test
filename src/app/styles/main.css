@@ -1,38 +1,55 @@
-:root {
-  --container: 1512px;
-}
-
-.container {
-  max-width: var(--container);
-  margin-inline: auto;
-  width: 100%;
-}
+/* Hero  */
 
 .hero {
+  width: 100%;
+  max-width: 1512px;
+  margin-inline: auto;
+  aspect-ratio: 1512 / 888;
+  
+  background-image: url("/images/hero_bg.png");
+  background-size: cover; 
+  background-position: center;
+  
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; 
   align-items: center;
+  
+  color: #eeefe9;
   text-align: center;
-  padding-bottom: 8px;
-  background-image: url("/images/hero_bg.png");
-  background-repeat: no-repeat;
-  background-size: contain;
+  padding-top: 321px; 
 }
 
 .hero__content {
   display: flex;
   flex-direction: column;
-  gap: 180px;
-  padding-top: 321px;
-  padding-bottom: 87px;
+  align-items: center;
+  gap: 180px; 
 }
 
+.hero__text--main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero__text--main h1 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.hero__text--main p,
+.hero__content > p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* Галерея */
 .main__galery {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 8px;
-  padding-bottom: 8px;
+  padding-block: 8px;
 }
 
 .main__galery li {
@@ -46,6 +63,8 @@
   object-fit: cover;
 }
 
+/* Новинки та Бестселери */
+
 .main__new,
 .main__bestsellers {
   padding-top: 40px;
@@ -55,10 +74,9 @@
 .main__new--top,
 .main__bestsellers--top {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 0 80px;
+  margin-inline: 80px;
   margin-bottom: 40px;
 }
 
@@ -66,7 +84,13 @@
 .main__bestsellers--products {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
   justify-content: center;
-  margin: 0 40px;
+  gap: 40px;
+  margin-inline: 40px;
+}
+
+/* Шрифти */
+.sub_title {
+  font-size: 14px;
+  font-weight: 400;
 }

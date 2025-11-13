@@ -19,12 +19,12 @@ export default function Order() {
 
       <section className="order__info">
         <div className="order__info--leftside">
-          <h2>Оформлення замовлення</h2>
+          <h2 className="little__text">Оформлення замовлення</h2>
           <div className="order__contact-info">
-            <h3>Контактна інформація</h3>
+            <h3 className="big__text">Контактна інформація</h3>
             <div className="order__contact--double-row">
               <div className="order__contact--name">
-                <label htmlFor="firstName">Ваше ім’я *</label>
+                <label className="regular__text" htmlFor="firstName">Ваше ім’я *</label>
                 <input
                   className="input"
                   type="text"
@@ -77,7 +77,7 @@ export default function Order() {
           </div>
 
           <div className="order__delivery--method">
-            <h3>Способи доставки</h3>
+            <h3 className="big__text">Способи доставки</h3>
 
             <div className="order__contact--chekboxes">
               <label>
@@ -119,7 +119,7 @@ export default function Order() {
           </div>
 
           <div className="order__contact--paymethod">
-            <h3>Способи оплати</h3>
+            <h3 className="big__text">Способи оплати</h3>
             <div className="order__contact--chekboxes">
               <label>
                 <input type="checkbox" name="paymethod" required />
@@ -135,7 +135,7 @@ export default function Order() {
           </div>
 
           <div className="order__contact--comment">
-            <h3>Ваш коментар</h3>
+            <h3 className="big__text">Ваш коментар</h3>
             <div className="order__contact--row">
               <label htmlFor="comment">Додати коментар до замовлення</label>
               <textarea
@@ -150,7 +150,7 @@ export default function Order() {
         </div>
 
         <div className="order__info--rightside">
-          <h2>Ваша корзина</h2>
+          <h2 className="regular__text">Ваша корзина</h2>
           <div className="order__cart--item">
             <img
               src="images/in_bascket.png"
@@ -158,7 +158,7 @@ export default function Order() {
  
             />
             <div className="order__cart--item-info">
-              <h3>Босоніжки жіночі із натуральної замші</h3>
+              <h3 className="medium__text">Босоніжки жіночі із натуральної замші</h3>
               <div className="order__cart--item-size">
                 <span>Розмір: </span>
                 <span>37</span>
@@ -170,7 +170,7 @@ export default function Order() {
                   style={{ backgroundColor: "#E7E4D1" }}
                   aria-hidden="true"
                 ></span>
-                <span>Бежевий</span>
+                <span className="order__cart--colour-text-second">Бежевий</span>
               </div>
               <div className="order__cart--item-price">
                 <div className="order__cart--item-number">
@@ -194,7 +194,7 @@ export default function Order() {
             </div>
           </div>
 
-          <label htmlFor="promoCode">У мне є промокод на знижку</label>
+          <label className="regular__text" htmlFor="promoCode">У мне є промокод на знижку</label>
           <input
             className="input"
             type="promoCode"

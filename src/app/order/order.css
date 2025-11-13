@@ -1,3 +1,5 @@
+
+/* Контейнер */
 .container {
   max-width: var(--container);
   margin-inline: auto;
@@ -6,14 +8,28 @@
 
 .order__info {
   display: flex;
-  flex-direction: row;
   gap: 100px;
-  padding-bottom: 80px;
+  padding-block: 40px 80px;
+  margin-inline: 80px;
 }
 
+.order__info--leftside {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  flex: 780;
+  min-width: 0;
+}
+
+.order__info--rightside {
+  flex: 472;
+  min-width: 0;
+}
+
+/* Breadcrumbs */
 .order__breadcrumbs {
-  padding-top: 18px;
-  padding-bottom: 18px;
+  margin-left: 80px;
+  padding-block: 18px;
 }
 
 .order__breadcrumbs ul {
@@ -24,21 +40,21 @@
 .order__breadcrumbs li {
   display: flex;
   align-items: center;
-  color: #1e1e1e80;
+  color: var(--color-main-a50);
   font-size: 13px;
 }
 
 .order__breadcrumbs li:not(:last-child)::after {
   content: "/";
-  font-size: 13px;
-  color: #1e1e1e80;
-  margin: 0 6px;
+  color: inherit;
+  font-size: inherit;
+  margin-inline: 6px;
 }
 
-.order__info--leftside {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+/* Форми та інпути */
+.input {
+  width: 100%;
+  border: var(--border-default);
 }
 
 .order__inputs-name-surname {
@@ -47,49 +63,63 @@
   gap: 24px;
 }
 
+.order__contact--row {
+  margin-top: 24px;
+}
+.order__contact--row p {
+  margin-top: 8px;
+}
+
 .order__contact--double-row {
   display: flex;
-  flex-direction: row;
   gap: 24px;
+  margin-top: 32px;
 }
-
-.order__contact--double-row > div{
+.order__contact--double-row > div {
   flex: 1;
-}
-
-.input {
-  width: 100%;
-  border: solid 1px #1e1e1e;
 }
 
 .order__contact--chekboxes {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  margin-top: 24px;
 }
 
+.order__contact--select,
+.order__contact--postnumber {
+  margin-top: 32px;
+}
+
+.order__info--rightside input {
+  margin-top: 8px;
+}
+
+/* Кошик */
 .order__cart--item {
   display: flex;
-  flex-direction: row;
   gap: 24px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-block: 40px;
 }
 
 .order__cart--item img {
-  width: 100%;
+  height: auto;
+  align-self: flex-start;
 }
 
-.order__cart--item-info{
+.order__cart--item-info {
   padding-top: 10px;
+  flex: 1;
 }
 
 .order__cart--item-size {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-block: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-main-a80);
 }
 
 .order__cart--item-color {
@@ -98,8 +128,19 @@
   padding-bottom: 37px;
 }
 
+.order__cart--colour-text,
+.order__cart--colour-text-second {
+  font-size: 14px;
+  font-weight: 400;
+}
+
 .order__cart--colour-text {
   margin-right: 16px;
+  color: var(--color-main-a80);
+}
+
+.order__cart--colour-text-second {
+  color: var(--color-main-a70);
 }
 
 .color-swatch {
@@ -117,6 +158,7 @@
 
 .final-price {
   margin-left: auto;
+  margin-right: 10px;
 }
 
 .order__cart--item-number {
@@ -124,12 +166,11 @@
   gap: 16px;
 }
 
-.order__cart--summary{
+/* Summary */
+.order__cart--summary {
   margin-bottom: 24px;
-}
-
-.order__info--rightside input{
-  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .summary__line {
@@ -141,10 +182,10 @@
 .order__cart--final-total {
   display: flex;
   justify-content: space-between;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 21px;
   margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
 }
 
 .order__cart--checkboxes {
@@ -153,17 +194,44 @@
   gap: 16px;
   margin-top: 20px;
   margin-bottom: 40px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.order__cart--checkboxes a {
+  font-weight: 500;
+  text-decoration: underline;
 }
 
 .order__cart--btn {
-  height: 45px;
   display: block;
   width: 100%;
-  background-color: #1e1e1e;
-  color: #ffffff;
+  height: 45px;
+  background-color: var(--color-main);
+  color: var(--color-light);
   border: none;
-
   text-align: center;
-  font-size: 16;
+  font-size: 16px;
   font-weight: 400;
+}
+
+/* Текст */
+.little__text {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.medium__text {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.regular__text {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.big__text {
+  font-size: 20px;
+  font-weight: 600;
 }

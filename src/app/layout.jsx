@@ -1,16 +1,30 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from 'next/font/local';
 import "./styles/global.css";
-import Header from './components/Header/header'
+import HeaderSwitcher from './components/HeaderSwitcher'
 import Footer from './components/Footer/footer'
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+const geist = localFont({
+  src: [
+    {
+      path: '../fonts/Geist-Regular.ttf',
+      weight: '400', 
+      style: 'normal',
+    },
+    {
+      path: '../fonts/Geist-SemiBold.ttf',
+      weight: '600', 
+      style: 'normal',
+    },
+    {
+      path: '../fonts/Geist-Medium.ttf',
+      weight: '500',
+      style: 'normal',
+    }
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  
+  ],
+  variable: '--font-geist',
+  display: 'swap',
 });
 
 export const metadata = {
@@ -20,9 +34,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="uk">
+    <html lang="uk" className={geist.variable}>
       <body>
-        <Header />
+        <HeaderSwitcher />
         <main>{children}</main>
          <Footer />
       </body>

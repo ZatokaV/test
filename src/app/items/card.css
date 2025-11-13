@@ -15,3 +15,31 @@
   margin-top: 24px;
   padding-left: 20px;
 }
+
+.product__card--color-inbuscet{
+  display: flex;
+  gap: 32px;
+  padding-top: 24px;
+}
+
+.color-swatch{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  vertical-align: middle;
+}
+
+
+.product__name{
+  font-weight: 500;
+  font-size: 16px;
+  color: #1E1E1E;
+}
+
+.product__price{
+  font-size: 16px;
+  font-weight: 400;
+  color: #1E1E1E;
+}
+
